@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="2020.06.25" orientation="orthogonal" renderorder="left-down" width="64" height="64" tilewidth="8" tileheight="8" infinite="0" nextlayerid="4" nextobjectid="21">
+ <editorsettings>
+  <export target="level01.lua" format="lua"/>
+ </editorsettings>
+ <objectgroup color="#00ff00" id="2" name="world">
+  <object id="1" name="base" x="194" y="174" width="32" height="16"/>
+  <object id="3" name="base" x="226" y="198" width="16" height="48"/>
+  <object id="4" name="base" x="202" y="190" width="8" height="16"/>
+  <object id="6" name="base" x="194" y="164" width="8" height="10"/>
+  <object id="7" name="base" x="202" y="158" width="40" height="8"/>
+  <object id="12" name="base" x="242" y="160" width="8" height="46"/>
+  <object id="13" name="base" x="202" y="206" width="24" height="8"/>
+ </objectgroup>
+ <objectgroup id="3" name="objects" tintcolor="#55ffff">
+  <object id="2" name="player1" x="202" y="182" width="8" height="8">
+   <ellipse/>
+  </object>
+  <object id="15" name="tree" x="196" y="170" width="2" height="2"/>
+  <object id="16" name="tree" x="208" y="160" width="2" height="2"/>
+  <object id="17" name="tree" x="222" y="162" width="2" height="2"/>
+  <object id="18" name="tree" x="232" y="160" width="2" height="2"/>
+  <object id="19" name="tree" x="246" y="164" width="2" height="2"/>
+  <object id="20" name="tree" x="244" y="174" width="2" height="2"/>
+ </objectgroup>
+</map>
