@@ -133,7 +133,8 @@ end
 
 function G3DFormat.buildG3DObject(obj,mtls,top)
 	mtls=mtls or {}
-	m=D3.Mesh.new()
+--	m=D3.Mesh.new()
+	m=Mesh3Db.new()
 	m:setVertexArray(obj.vertices)
 	m:setIndexArray(obj.indices)
 	mtl={}
@@ -160,7 +161,7 @@ function G3DFormat.buildG3DObject(obj,mtls,top)
 		end
 		m:setTextureCoordinateArray(tc)
 		m.hasTexture=true
-		smode=smode|D3.Mesh.MODE_TEXTURE
+		smode=smode|Mesh3Db.MODE_TEXTURE
 	end
 	if mtl.normalMapFile and not mtl.normalMap then
 		mtl.normalMap=Texture.new(mtl.normalMapFile,true)
@@ -170,7 +171,7 @@ function G3DFormat.buildG3DObject(obj,mtls,top)
 	if (mtl.normalMap~=nil) then
 		m:setTexture(mtl.normalMap,1)
 		m.hasNormalMap=true
-		smode=smode|D3.Mesh.MODE_BUMP
+		smode=smode|Mesh3Db.MODE_BUMP
 	end
 	if mtl.kd then
 		m:setColorTransform(mtl.kd[1],mtl.kd[2],mtl.kd[3],mtl.kd[4])
@@ -178,7 +179,7 @@ function G3DFormat.buildG3DObject(obj,mtls,top)
 	if obj.normals then
 		m.hasNormals=true
 		m:setGenericArray(3,Shader.DFLOAT,3,#obj.normals/3,obj.normals)
-		smode=smode|D3.Mesh.MODE_LIGHTING
+		smode=smode|Mesh3Db.MODE_LIGHTING
 	end
 	if obj.animdata then
 		m:setGenericArray(4,Shader.DFLOAT,4,#obj.animdata.bi/4,obj.animdata.bi)
@@ -193,16 +194,29 @@ function G3DFormat.buildG3DObject(obj,mtls,top)
 			end
 			m.bonesTop=top
 		end
-		smode=smode|D3.Mesh.MODE_ANIMATED
+		smode=smode|Mesh3Db.MODE_ANIMATED
 	end
-	m:updateMode(smode|D3.Mesh.MODE_SHADOW,0)
+	m:updateMode(smode|Mesh3Db.MODE_SHADOW,0)
 	return m
 end
+
+
+-- *******************************
+local Group3Db=Core.class(Sprite)
+
+function Group3Db:updateMode(set,clear)
+	for _,v in pairs(self.objs) do
+		v:updateMode(set,clear)
+	end
+end
+-- *******************************
+
 
 function G3DFormat.buildG3D(g3d,mtl,top)
 	local spr=nil
 	if g3d.type=="group" then
-		spr=D3.Group.new()
+--		spr=D3.Group.new()
+		spr=Group3Db.new()
 		local ltop=top or spr
 		spr.name=g3d.name
 		spr.objs={}
@@ -246,7 +260,7 @@ function G3DFormat.buildG3D(g3d,mtl,top)
 		for m,_ in pairs(spr.animMeshes) do
 			if m.animBones then
 				for _,b in ipairs(m.animBones) do
-					b.bone=spr.bones[b.boneref]
+          b.bone=spr.bones[b.boneref]
 					local pose=Matrix.new()
 					pose:setMatrix(b.poseMat:getMatrix())
 					local p=m

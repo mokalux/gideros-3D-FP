@@ -63,6 +63,15 @@ function loadGdx(file,imtls)
 			elseif a=="NORMAL" then as=3 an="n"
 			elseif a=="COLOR" then as=4 an="c"
 			elseif a=="TEXCOORD0" then as=2 an="t"
+-- fix?
+			elseif a=="TEXCOORD1" then as=2 an="t"
+			elseif a=="TEXCOORD2" then as=2 an="t"
+			elseif a=="TEXCOORD3" then as=2 an="t"
+			elseif a=="TEXCOORD4" then as=2 an="t"
+			elseif a=="TEXCOORD5" then as=2 an="t"
+			elseif a=="TEXCOORD6" then as=2 an="t"
+			elseif a=="TEXCOORD7" then as=2 an="t"
+-- fix?
 			elseif a:sub(1,11)=="BLENDWEIGHT" then as=2 an="bw"..a:sub(12,12)
 			else assert(false, "Attribute not handled:"..a) end
 			attrs[an]={ ab=ds, al=as, d={} }

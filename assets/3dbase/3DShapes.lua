@@ -70,7 +70,6 @@ end
 function Mesh3D:setLocalMatrix(m)
 	self:setShaderConstant("InstanceMatrix",Shader.CMATRIX,1,m:getMatrix())
 end
-
 --Unit Cube
 local Box=Core.class(Mesh3D)
 function Box:init(w,h,d)
