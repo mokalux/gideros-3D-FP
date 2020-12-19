@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="2020.06.25" orientation="orthogonal" renderorder="left-down" width="64" height="64" tilewidth="4" tileheight="4" infinite="0" nextlayerid="9" nextobjectid="107">
+ <editorsettings>
+  <export target="level01.lua" format="lua"/>
+ </editorsettings>
+ <objectgroup color="#00ff00" id="2" name="grounds" locked="1" tintcolor="#55aaff">
+  <object id="31" name="groundA" x="84" y="84" width="88" height="88"/>
+  <object id="23" name="groundB" x="0" y="0" width="84" height="84"/>
+  <object id="25" name="groundB" x="84" y="0" width="88" height="84"/>
+  <object id="24" name="groundC" x="172" y="0" width="84" height="84"/>
+  <object id="26" name="groundB" x="0" y="84" width="84" height="88"/>
+  <object id="30" name="groundC" x="172" y="84" width="84" height="88"/>
+  <object id="27" name="groundD" x="0" y="172" width="84" height="84"/>
+  <object id="28" name="groundA" x="84" y="172" width="88" height="84"/>
+  <object id="29" name="groundD" x="172" y="172" width="84" height="84"/>
+ </objectgroup>
+ <objectgroup id="5" name="playables">
+  <object id="32" name="player1" x="121" y="129" width="2" height="2">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="walls" tintcolor="#55ffff">
+  <object id="36" name="wallB" x="0" y="0" width="172" height="4"/>
+  <object id="38" name="wallB" x="172" y="0" width="84" height="4"/>
+  <object id="39" name="wallB" x="252" y="4" width="4" height="168"/>
+  <object id="40" name="wallA" x="4" y="168" width="32" height="4"/>
+  <object id="41" name="wallA" x="56" y="168" width="28" height="4"/>
+  <object id="44" name="wallA" x="84" y="168" width="88" height="4"/>
+  <object id="45" name="wallA" x="168" y="84" width="4" height="40"/>
+  <object id="46" name="wallA" x="168" y="136" width="4" height="32"/>
+  <object id="47" name="wallA" x="172" y="168" width="32" height="4"/>
+  <object id="48" name="wallA" x="224" y="168" width="28" height="4"/>
+  <object id="49" name="wallB" x="0" y="172" width="4" height="84"/>
+  <object id="50" name="wallB" x="4" y="252" width="80" height="4"/>
+  <object id="51" name="wallB" x="84" y="252" width="88" height="4"/>
+  <object id="52" name="wallB" x="172" y="252" width="80" height="4"/>
+  <object id="53" name="wallB" x="252" y="172" width="4" height="84"/>
+  <object id="54" name="wallA" x="88" y="84" width="80" height="4"/>
+  <object id="97" name="wallA" x="84" y="84" width="4" height="20"/>
+  <object id="99" name="wallA" x="84" y="112" width="4" height="56"/>
+  <object id="100" name="wallB" x="0" y="4" width="4" height="164"/>
+ </objectgroup>
+ <objectgroup id="6" name="shapes">
+  <object id="55" x="20" y="16" width="8" height="8"/>
+  <object id="56" x="36" y="32" width="12" height="12"/>
+  <object id="57" x="60" y="56" width="12" height="12"/>
+  <object id="58" x="100" y="16" width="12" height="12" rotation="45"/>
+  <object id="59" x="128" y="36" width="12" height="12" rotation="45"/>
+  <object id="60" x="156" y="16" width="12" height="12" rotation="45"/>
+  <object id="61" name="d" x="148" y="32" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="62" x="208" y="16" width="4" height="4">
+   <ellipse/>
+  </object>
+  <object id="63" x="212" y="36" width="8" height="8">
+   <ellipse/>
+  </object>
+  <object id="64" x="240" y="40" width="4" height="4">
+   <ellipse/>
+  </object>
+  <object id="65" x="204" y="116" width="16" height="16">
+   <ellipse/>
+  </object>
+  <object id="66" x="204" y="20" width="4" height="4">
+   <ellipse/>
+  </object>
+  <object id="67" x="208" y="42" width="6" height="6">
+   <ellipse/>
+  </object>
+  <object id="72" name="d" x="108" y="32" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="76" name="d" x="116" y="56" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="77" name="d" x="92" y="104" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="78" name="d" x="68" y="104" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="79" name="d" x="92" y="56" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="80" name="d" x="68" y="76" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="81" name="d" x="204" y="48" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="82" name="d" x="208" y="28" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="85" name="d" x="200" y="26" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="86" name="d" x="208" y="52" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="87" name="d" x="240" y="48" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="88" name="d" x="124" y="56" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="91" name="d" x="96" y="36" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="93" name="d" x="160" y="34" width="1" height="1">
+   <ellipse/>
+  </object>
+  <object id="101" x="44" y="84" width="12" height="12"/>
+  <object id="102" x="120" y="64" width="8" height="8">
+   <ellipse/>
+  </object>
+  <object id="103" x="120" y="72" width="8" height="8">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="objs">
+  <object id="104" name="a8" x="121" y="126" width="1" height="1"/>
+ </objectgroup>
+ <objectgroup id="8" name="fbxs">
+  <object id="105" name="fbx01" x="124" y="124" width="3" height="3" rotation="180"/>
+  <object id="106" name="fbx02" x="123" y="241" width="3" height="3"/>
+ </objectgroup>
+</map>

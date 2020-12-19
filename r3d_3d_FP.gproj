@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
- <properties osx_installerId="" atv_bundle="com.yourdomain.yourapp-atv" touchToMouse="1" version_code="1" osx_signingId="" splash_v_image="" mouseTouchOrder="0" win_org="GiderosMobile" html5_host="" orientation="1" html5_fbload="100" macos_category="5" osx_category="5" encryptAssets="0" exportMode="0" splashScaleMode="0" html5_wasm="1" windowWidth="0" html5_crash="" osx_domain="giderosmobile.com" autorotation="0" mainluaOnly="0" osx_bundle="com.yourdomain." iosDevice="0" architecture="7" ios_bundle="com.yourdomain." html5_fbinstant="0" encryptCode="0" app_icon="" backgroundColor="#ffffff" winrt_package="com.yourdomain.yourapp" logicalWidth="480" retinaDisplay="3" logicalHeight="800" tv_icon="" disableSplash="0" splash_h_image="" html5_mem="256" fps="60" macos_bundle="com.yourdomain.yourapp-macos" version="1.0" mouseToTouch="1" build_number="1" winrt_org="GiderosMobile" html5_pack="1" osx_org="GiderosMobile" vsync="1" win_domain="giderosmobile.com" scaleMode="3" windowHeight="0" html5_symbols="0" app_name="">
+ <properties exportMode="0" windowHeight="0" build_number="1" html5_wasm="1" osx_bundle="com.yourdomain." mainluaOnly="0" ios_bundle="com.yourdomain." winrt_package="com.yourdomain.yourapp" splash_v_image="" architecture="7" logicalWidth="480" encryptAssets="0" windowWidth="0" tv_icon="" version="1.0" app_name="" mouseTouchOrder="0" mouseToTouch="1" retinaDisplay="3" html5_crash="" fps="30" vsync="1" win_domain="giderosmobile.com" osx_org="GiderosMobile" osx_category="5" iosDevice="0" touchToMouse="1" html5_symbols="0" osx_domain="giderosmobile.com" version_code="1" osx_signingId="" encryptCode="0" autorotation="0" orientation="1" win_org="GiderosMobile" app_icon="" backgroundColor="#ffffff" macos_category="5" html5_pack="1" atv_bundle="com.yourdomain.yourapp-atv" scaleMode="3" splash_h_image="" splashScaleMode="0" html5_mem="256" disableSplash="0" logicalHeight="800" osx_installerId="" html5_host="" html5_fbinstant="0" winrt_org="GiderosMobile" html5_fbload="100" macos_bundle="com.yourdomain.yourapp-macos">
   <imageScales/>
   <plugins>
-   <plugin enabled="1" name="Easing"/>
-   <plugin enabled="1" name="JSON"/>
-   <plugin enabled="1" name="SceneManager"/>
+   <plugin name="Easing" enabled="1"/>
+   <plugin name="JSON" enabled="1"/>
+   <plugin name="ReactPhysics3D" enabled="1"/>
+   <plugin name="SceneManager" enabled="1"/>
   </plugins>
   <exports>
    <export name="APK">
-    <property name="androidPath" value=""/>
-    <property name="androidSdk" value=""/>
-    <property name="androidTarget" value="26"/>
-    <property name="androidTools" value=""/>
-    <property name="buildAab" value="1"/>
-    <property name="buildApk" value="0"/>
-    <property name="deployApk" value="0"/>
-    <property name="javaPath" value=""/>
-    <property name="keyAlias" value=""/>
-    <property name="keyStore" value=""/>
-    <property name="packageName" value="com.yourdomain.yourapp"/>
-    <property name="timestampApk" value="0"/>
+    <property value="" name="androidPath"/>
+    <property value="" name="androidSdk"/>
+    <property value="26" name="androidTarget"/>
+    <property value="" name="androidTools"/>
+    <property value="1" name="buildAab"/>
+    <property value="0" name="buildApk"/>
+    <property value="0" name="deployApk"/>
+    <property value="" name="javaPath"/>
+    <property value="" name="keyAlias"/>
+    <property value="" name="keyStore"/>
+    <property value="com.yourdomain.yourapp" name="packageName"/>
+    <property value="0" name="timestampApk"/>
    </export>
   </exports>
  </properties>
@@ -39,7 +40,7 @@
   <file name="assets/3dbase/3DLighting.lua"/>
   <file name="assets/3dbase/3DObjLoader.lua"/>
   <file name="assets/3dbase/3DShaders.lua"/>
-  <file excludeFromExecution="1" name="assets/3dbase/3DShapes.lua"/>
+  <file name="assets/3dbase/3DShapes.lua" excludeFromExecution="1"/>
   <file name="assets/3dbase/3DView.lua"/>
   <file name="assets/3dbase/G3DFormat.lua"/>
  </folder>
@@ -58,11 +59,11 @@
    </folder>
    <folder name="female">
     <file name="assets/models/fbx_json/female/characterLargeFemale.json"/>
+    <file name="assets/models/fbx_json/female/fantasyFemaleB.png"/>
    </folder>
    <folder name="monster01">
-    <file name="assets/models/fbx_json/monster01/Defeated - Copy.json"/>
-    <file name="assets/models/fbx_json/monster01/defeated.json"/>
-    <file name="assets/models/fbx_json/monster01/defeated_anim.json"/>
+    <file name="assets/models/fbx_json/monster01/DefeatedM.json"/>
+    <file name="assets/models/fbx_json/monster01/bear_diffuse.png"/>
    </folder>
   </folder>
   <folder name="obj">
@@ -86,7 +87,7 @@
   <file name="assets/textures/Weathered Stone Wall1024.jpg"/>
  </folder>
  <folder name="tiled">
-  <file excludeFromExecution="1" name="assets/tiled/level01.lua"/>
+  <file name="assets/tiled/level01.lua" excludeFromExecution="1"/>
   <file name="assets/tiled/level01.tmx"/>
   <file name="assets/tiled/tiled_levels.lua"/>
  </folder>
